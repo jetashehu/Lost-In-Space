@@ -1,0 +1,503 @@
+/*body{
+	background-image: url(yjet3.jpg);
+	background-repeat: repeat;
+}*/
+html{
+	scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+ 
+ul{
+	padding: 0;
+}
+ul li{
+	text-align: left;
+	list-style-type: none;
+	padding-top: 20px;
+}
+td{
+	padding: 25px;
+}
+.menyja-hamburger{
+	display: none;
+	width: 150px;
+	border-radius: 20px;
+	background-color: rgba(32, 189, 232, 0.35);
+}
+.hoveri:hover .menyja-hamburger{
+	display: block;
+	position: absolute;
+ 
+}
+.permbajtja-lart{
+	z-index: 100;
+  animation: 1.5s ease-in ngaEMajta;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0);
+  color: #f1f1f1;
+  width: 100%;
+}
+ 
+.butoniPlanetet{
+	color: white;
+	font-size: 1.2rem;
+	transition-duration: 0.5s;
+	transition-property: font-size;
+	transition-timing-function: ease-in-out;
+}
+a, a:active, a:hover {
+	text-decoration: none;
+	color: white;
+}
+ 
+.butoniPlanetet:hover{
+	background-color: rgba(77, 77, 77, 0.7);
+	border-radius: 10px;
+	color: white;
+}
+.butoniPlanetet:focus{
+	font-size: 1.5rem;
+}
+ button:focus {
+	 outline: none;
+ }
+.fotoja{	
+	animation-name: planetet;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+.dielli{
+	animation-name: dielli;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+
+ 
+#planetet{
+	display: none;
+	position: relative;
+	text-align: center;
+	margin-top: 25px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+ 
+.menyja1{
+	border: 1px solid aqua;
+	border-radius: 10px 50px 10px 50px;
+	margin: 20px;
+	background-color: rgba(32, 189, 232, 0.35);
+}
+ 
+.menyja1:hover{
+	animation-name: borderat;
+	animation-duration: 3s;
+}
+ 
+@keyframes borderat{
+	0%{
+		transform: perspective(0px) rotateY(0deg);
+	}
+	40%{
+		transform: perspective(700px) rotateY(20deg);
+	}
+	90%{
+		transform: perspective(700px) rotateY(-20deg);
+	}
+	100%{
+		transform: perspective(0px) rotateY(0deg);
+	}
+}
+
+.all{
+	width: 100%;
+	height: 100%;
+}
+ 
+.permbajtja-mes{
+	position: relative; 
+	left: 17%;
+	width: 500px;
+}
+
+.kontakti{
+	margin-top: 400px !important;
+	margin: auto;
+	width: 500px;
+	padding: 50px;
+	border-radius: 28px;
+	box-shadow: 0 14px 21px black;
+	background-color: rgba(255,255,255, 0.5);
+}
+.kontaktbt{
+	cursor: pointer;
+}
+
+.borderi{
+	color: white;
+	width: 350px;
+	height: 500px;
+	border-radius: 0  20px  0 0;
+	padding: 25px;
+	background-image: linear-gradient(rgba(0, 0, 0, 1) , rgba(44, 44, 44, 0.5));
+}
+.shenuesi-trekendesh{
+	animation: 2.5s ease-in ngaLart;
+}
+ 
+
+.row{
+	margin-right: 0px !important;
+}
+hr{
+	height: 2.78px;
+	border:none;
+	background-color: white;
+}
+ 
+.permbajtja-poshte{
+	animation: 2s ease-in ngaEDjathta;
+	position: relative;
+	top: 100%;
+	bottom: 0;
+	color: #f1f1f1;
+ 
+}
+.parametri{
+	border: none;
+	width: 200px;
+	height: auto;
+	float: right;
+ 
+}
+.parametri:hover{
+	background-color: rgba(44, 44, 44, 0.5);
+	border-radius: 8px 8px 8px 8px;
+}
+ 
+.footer{
+ 
+}
+#video{
+	object-fit: cover;
+	position: fixed;
+	opacity: 0.9;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+}
+
+.vullkanitekst:hover{
+	background-image: linear-gradient(to right, rgba(255 ,0 ,0 ,0.7), rgba(255, 255, 0, 0.7));
+}
+
+
+/* fillimi i pjeseve tek hena */
+/* pjesa e pare tek hena intrograpihca */
+.rrethi-hena{
+	width: 75px;
+	height: 75px;
+	border-radius:150px 150px 150px 150px ;
+	position: absolute;
+	border: solid #f1f1f1 ;
+	margin-left: 65%;
+	margin-top: 5%;
+	border-bottom: none;
+	border-right: none;
+}
+.vija-hena{
+	position: absolute; 
+	background-color:rgba(255, 255, 255, 1); 
+	margin: 0; 
+	padding: 0; 
+	width: 68px;
+	margin-top: 9.55%; 
+	margin-left: 89.5%; 
+	height: 2px; 
+	transform: rotate(90deg);
+}
+.vija1-hena{
+	position: absolute; 
+	background-color:rgba(255, 255, 255, 1); 
+	margin: 0; 
+	padding: 0; 
+	width: 329px;
+	margin-top: 7.4%; 
+	margin-left: 70%; 
+	height: 2px; 
+	border-bottom-left-radius: 100%;
+}
+.vija2-hena{
+	position: absolute; 
+	background-color:rgba(255, 255, 255, 1); 
+	margin: 0; 
+	padding: 0; 
+	width: 160px;
+	margin-top: 11.75%; 
+	margin-left: 81.2%; 
+	height: 2px;
+}
+/* pjesa e dyte tek hena inrtographica */
+.rrethi2{
+	width: 75px;
+	height: 75px;
+	border-radius:150px 150px 150px 150px ;
+	position: absolute;
+	border: solid #f1f1f1 ;
+	margin-left: 87%;
+	margin-top: 15%;
+	border-bottom: none;
+	border-left: none;
+}
+.vij1{
+	position: absolute; 
+	background-color:rgba(255, 255, 255, 1); 
+	margin: 0; 
+	padding: 0; 
+	width: 315px;
+	margin-top: 17.2%; 
+	margin-left: 66.2%; 
+	height: 2px; 
+	border-bottom-right-radius: 100%;
+}
+.vij2{
+	position: absolute; 
+	background-color:rgba(255, 255, 255, 1); 
+	margin: 0; 
+	padding: 0; 
+	width: 50px;
+	margin-top: 18.75%; 
+	margin-left: 64.5%; 
+	height: 2px; 
+	transform: rotate(90deg);
+}
+.vij3{
+	position: absolute; 
+	background-color:rgba(255, 255, 255, 1); 
+	margin: 0; 
+	padding: 0; 
+	width: 160px;
+	margin-top: 20.5%; 
+	margin-left: 66.1%; 
+	height: 2px;
+}
+ /* pjesa e tret tek hena intrographica */
+ .rrethi3{
+	width: 75px;
+	height: 75px;
+	border-radius:150px 150px 150px 150px ;
+	position: absolute;
+	border: solid #f1f1f1 ;
+	margin-left: 65%;
+	margin-top: 25.8%;
+	border-bottom: none;
+	border-right: none;
+}
+.vija1{
+	position: absolute; 
+	background-color:rgba(255, 255, 255, 1); 
+	margin: 0; 
+	padding: 0; 
+	width: 50px;
+	margin-top: 29.7%; 
+	margin-left: 90%; 
+	height: 2px; 
+	transform: rotate(90deg);
+}
+.vija2{
+	position: absolute; 
+	background-color:rgba(255, 255, 255, 1); 
+	margin: 0; 
+	padding: 0; 
+	width: 329px;
+	margin-top: 28%; 
+	margin-left: 70%; 
+	height: 2px; 
+	border-bottom-left-radius: 100%;
+}
+.vija3{
+	position: absolute; 
+	background-color:rgba(255, 255, 255, 1); 
+	margin: 0; 
+	padding: 0; 
+	width: 160px;
+	margin-top: 31.39%; 
+	margin-left: 81.1%; 
+	height: 2px;
+}
+/* pjesa e katert tek hena intrographica  */
+.rrethi4{
+	width: 75px;
+	height: 75px;
+	border-radius:150px 150px 150px 150px ;
+	position: absolute;
+	border: solid #f1f1f1 ;
+	margin-left: 87%;
+	margin-top: 37%;
+	border-bottom: none;
+	border-left: none;
+}
+.vi1{
+	position: absolute; 
+	background-color:rgba(255, 255, 255, 1); 
+	margin: 0; 
+	padding: 0; 
+	width: 315px;
+	margin-top: 39.2%; 
+	margin-left: 66.2%; 
+	height: 2px; 
+	border-bottom-right-radius: 100%;
+}
+.vi2{
+	position: absolute; 
+	background-color:rgba(255, 255, 255, 1); 
+	margin: 0; 
+	padding: 0; 
+	width: 50px;
+	margin-top: 40.8%; 
+	margin-left: 64.5%; 
+	height: 2px; 
+	transform: rotate(90deg);
+}
+.vi3{
+	position: absolute; 
+	background-color:rgba(255, 255, 255, 1); 
+	margin: 0; 
+	padding: 0; 
+	width: 160px;
+	margin-top: 42.5%; 
+	margin-left: 66.1%; 
+	height: 2px;
+}
+
+.planetet{
+	display: none;
+	background-color: rgba(97, 96, 96, 0.7);
+	position: absolute;
+	right: 0%;
+	padding: 20px;
+	width: 295px;
+	border-radius: 20px;
+}
+
+.planetet-hover:hover .planetet{
+	display: block;
+	position: absolute;
+}
+
+/* trasnformimi i fjalis ne form gjysem rrethore */
+
+.a1 {
+	transform: translate(0px, 70px) rotate(-35deg);
+}
+
+.t {
+	transform: translate(-1px, 44px) rotate(-25deg);
+}
+
+.m {
+	transform: translate(1px, 22px) rotate(-20deg);
+}
+
+.o {
+	transform: translate(1px, 8px) rotate(-8deg);
+}
+
+.s {
+	transform: translate(0px, 8px) rotate(0deg);
+}
+
+.p1 {
+	transform: translate(-1px, 12.5px) rotate(10deg);
+}
+
+.h {
+	transform: translate(-1px, 24px) rotate(18deg);
+}
+
+.e {
+	transform: translate(-2px, 43px) rotate(23deg);
+}
+
+.r {
+	transform: translate(-5px, 68px) rotate(30deg);
+}
+
+.e1 {
+	transform: translate(-10px, 98px) rotate(35deg);
+}
+
+span {
+	display: inline-block;
+}
+
+.animacioni{
+	animation: 2s ease-in ngaEMajta;
+}
+
+.asteroidi{
+	animation: 3s ease-in ngaLart;
+	animation:4s planetet infinite;
+}
+.marsianimacion{
+	animation: 3s ease-in ngaEDjathta;
+}
+
+.surfacetekst{
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(90, 90, 88, 0.7));
+}
+.surfacetekst:hover{
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(90, 90, 88, 0.9));
+}
+/* Animacionet */
+@keyframes ngaEMajta {
+	0% {
+	  transform: translateX(-100%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
+  @keyframes ngaEDjathta {
+	  0%{
+		  transform: translateX(+100%);
+	  }
+	  100%{
+		  transform: translateX(0);
+	  }
+  }
+  @keyframes ngaLart {
+	0%{
+		transform: translateY(-100%);
+	}
+	100%{
+		transform: translateY(0);
+	}
+  }
+ 
+@keyframes planetet{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes dielli {
+	0%{
+		opacity: 0.5;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0.5;
+	}
+}
